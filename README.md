@@ -236,4 +236,14 @@ erDiagram
 	PACIENTE||--o{VISITA_MEDICA:"realiza"
 	PERSONAL||--o{VISITA_MEDICA:"atiende"
 ```
+## Decripción de la estructura
 
+El sistema utiliza un modelo de datos híbrido. Las entidades principales como personal, pacientes y hospitales están en colecciones separadas (normalizadas) para garantizar la integridad y escalabilidad. La información fuertemente acoplada, como el historial de un paciente, se mantiene incrustada (desnormalizada) para optimizar las lecturas.
+
+A continuación se describe cada colección:
+
+##
+
+```
+
+```
