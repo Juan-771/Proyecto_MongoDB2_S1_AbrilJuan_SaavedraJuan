@@ -196,8 +196,9 @@ flowchart LR
     classDef recurso fill:#fce4ec,stroke:#c2185b,stroke-width:2px
     classDef proceso fill:#f1f8e9,stroke:#689f38,stroke-width:2px
 	
+```
 
-El diagrama conceptual plasma la estructura esencial de un sistema hospitalario, integrando las entidades fundamentales junto con los procesos de atención médica que las vinculan.
+El diagrama del modelo conceptual plasma la estructura esencial de un sistema hospitalario, integrando las entidades fundamentales junto con los procesos de atención médica que las vinculan.
 
 Representa los componentes medulares de la gestión hospitalaria, incluyendo las instituciones médicas, sus equipos directivos, las unidades especializadas, el personal asistencial, los pacientes atendidos, sus respectivos expedientes clínicos, las consultas realizadas, las terapias aplicadas y los medicamentos recetados. Para cada uno de estos elementos se definen sus atributos característicos y las relaciones que los unen.
 
@@ -208,10 +209,6 @@ El modelo incorpora además el ciclo completo de atención al paciente, desde su
 La representación enfatiza especialmente la coherencia estructural del sistema y la forma en que sus diferentes componentes interactúan para sostener las operaciones diarias de un centro de salud, destacando tanto los elementos estáticos como los procesos dinámicos que garantizan su funcionamiento integral.
 
 
-
-
-
-```
 ## Contrucción del Modelo Lógico
 
 El modelo lógico del Sistema de Gestión Hospitalaria en MongoDB establece la estructura general de los datos y sus interrelaciones, sin profundizar aún en aspectos técnicos de implementación. Se definen las colecciones principales junto con sus atributos y las claves que permiten conectar los diferentes documentos entre sí.
