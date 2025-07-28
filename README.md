@@ -131,10 +131,7 @@ Esta arquitectura pretende organizar los datos de forma adaptable y con capacida
 
 ```mermaid
 erDiagram
----
-config:
-  layout: elk
----
+
 	direction LR
 	HOSPITAL {
 		ObjectId _id PK ""  
