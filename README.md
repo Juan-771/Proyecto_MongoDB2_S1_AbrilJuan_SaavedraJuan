@@ -55,11 +55,17 @@ Ademas de que en este sistema abarca la gestión completa de un ecosistema hospi
 
 [5. Caso de Estudio]()
 
-[6. Estructura de la Base de Datos]()
+[6. Construcción del Modelo Conceptual]()
 
-[7. Consultas a la Base de Datos]()
+[7. Construcción del Modelo Lógico]()
 
-[8. Autor]()
+[8. Construcción del Modelo Físico]()
+
+[9. Estructura de la Base de Datos]()
+
+[10. Consultas a la Base de Datos]()
+
+[11. Autor]()
 
 ## Introducción
 
@@ -117,7 +123,7 @@ Los tratamientos médicos se deben registrar con información como su nombre, un
 
 Las visitas médicas deben quedar documentadas con la fecha y hora, el médico que atendió, el paciente involucrado y el diagnóstico correspondiente. El sistema debe permitir el registro de múltiples visitas para un mismo paciente a lo largo del tiempo.
 
-## Modelo Conceptual
+## Construcción del Modelo Conceptual
 
 El diseño conceptual del Sistema de Gestión Hospitalaria desarrollado en MongoDB se fundamenta en la modelación de las entidades fundamentales y sus interconexiones dentro del ecosistema de atención médica. Los componentes esenciales incluyen Centros Hospitalarios, Departamentos Especializados, Usuarios Pacientes, Equipo Médico y Administrativo, Procedimientos Terapéuticos, Fármacos y Consultas Médicas.
 
@@ -189,10 +195,199 @@ flowchart LR
     classDef atencion fill:#fff3e0,stroke:#f57c00,stroke-width:2px
     classDef recurso fill:#fce4ec,stroke:#c2185b,stroke-width:2px
     classDef proceso fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+	
+
+El diagrama conceptual plasma la estructura esencial de un sistema hospitalario, integrando las entidades fundamentales junto con los procesos de atención médica que las vinculan.
+
+Representa los componentes medulares de la gestión hospitalaria, incluyendo las instituciones médicas, sus equipos directivos, las unidades especializadas, el personal asistencial, los pacientes atendidos, sus respectivos expedientes clínicos, las consultas realizadas, las terapias aplicadas y los medicamentos recetados. Para cada uno de estos elementos se definen sus atributos característicos y las relaciones que los unen.
+
+Se observa cómo el personal se distribuye en las diferentes áreas de especialización, cómo cada paciente acumula un historial clínico completo, y de qué manera cada consulta médica queda registrada vinculando profesionales, diagnósticos, tratamientos y medicamentos correspondientes.
+
+El modelo incorpora además el ciclo completo de atención al paciente, desde su ingreso al centro hospitalario hasta la actualización de su expediente médico, pasando por todas las etapas intermedias de evaluación, diagnóstico y tratamiento. Esta perspectiva holística revela la interconexión entre los aspectos administrativos, clínicos y logísticos que conforman el sistema hospitalario, mostrando cómo funcionan coordinadamente para brindar una atención médica organizada y eficiente.
+
+La representación enfatiza especialmente la coherencia estructural del sistema y la forma en que sus diferentes componentes interactúan para sostener las operaciones diarias de un centro de salud, destacando tanto los elementos estáticos como los procesos dinámicos que garantizan su funcionamiento integral.
+
+
 
 
 
 ```
+## Contrucción del Modelo Lógico
+
+El modelo lógico del Sistema de Gestión Hospitalaria en MongoDB establece la estructura general de los datos y sus interrelaciones, sin profundizar aún en aspectos técnicos de implementación. Se definen las colecciones principales junto con sus atributos y las claves que permiten conectar los diferentes documentos entre sí.
+
+Entre las entidades fundamentales se encuentran Hospitales, Personal, Pacientes, Tratamientos, Medicamentos y Visitas Médicas. Los Hospitales mantienen conexiones con el Personal y los Pacientes, incluyendo además sus áreas de especialización y referencias al equipo médico asignado.
+
+Los Pacientes almacenan información personal junto con un subdocumento que contiene su historial clínico completo, donde se registran diagnósticos, tratamientos seguidos y medicamentos recetados. Por su parte, las Visitas Médicas funcionan como un puente entre médicos y pacientes, documentando fechas de consulta, diagnósticos realizados y tratamientos prescritos en cada atención.
+
+Tanto los Tratamientos como los Medicamentos se gestionan como colecciones separadas, siendo referenciados desde los historiales médicos y las visitas correspondientes.
+
+Este esquema lógico garantiza la consistencia de los datos mediante identificadores únicos y aprovecha la flexibilidad de MongoDB para anidar información cuando es conveniente, optimizando así las consultas y agilizando las operaciones más recurrentes del sistema.
+
+## Diagrama del Modelo Lógico
+
+```mermaid
+erDiagram
+    HOSPITALES {
+        ObjectId _id
+        string nombre
+        string direccion
+        string telefono
+        ObjectId director_general_id
+        array areas
+        array personal_ids
+    }
+
+    PERSONAL {
+        ObjectId _id
+        string tipo
+        string nombre
+        string numero_colegiatura
+        string especialidad
+        string telefono
+        string correo
+        double salario
+    }
+
+    PACIENTES {
+        ObjectId _id
+        string numero_historia_clinica
+        string nombre
+        string direccion
+        string telefono
+        string correo
+        array seguros
+        array historial_clinico
+    }
+
+    TRATAMIENTOS {
+        ObjectId _id
+        string nombre
+        string descripcion
+        string area
+        double costo
+    }
+
+    MEDICAMENTOS {
+        ObjectId _id
+        string nombre
+        string fabricante
+        string tipo
+        int stock
+    }
+
+    VISITAS_MEDICAS {
+        ObjectId _id
+        date fecha
+        string hora
+        ObjectId medico_id
+        ObjectId paciente_id
+        string diagnostico
+        array tratamientos_ids
+        array medicamentos_ids
+    }
+
+    HOSPITALES ||--o{ PERSONAL : "tiene"
+    HOSPITALES ||--o{ PACIENTES : "atiende"
+    PACIENTES ||--o{ VISITAS_MEDICAS : "tiene"
+    PERSONAL ||--o{ VISITAS_MEDICAS : "realiza"
+    VISITAS_MEDICAS }o--|| TRATAMIENTOS : "aplica"
+    VISITAS_MEDICAS }o--|| MEDICAMENTOS : "receta"
+
+
+```
+El modelo lógico define la estructuración de la información del sistema hospitalario, estableciendo las colecciones fundamentales, sus características principales y las interrelaciones que aseguran consistencia y recuperación ágil de datos. En este nivel se determinan las conexiones entre hospitales, su equipo médico y pacientes, así como la asociación de historiales clínicos y consultas con los correspondientes tratamientos y fármacos, utilizando ObjectId como mecanismo de referencia entre colecciones. Este enfoque se centra en la organización conceptual de los datos y sus vínculos, dejando para una etapa posterior los aspectos específicos de implementación física.
+
+El diseño busca mantener una arquitectura clara que facilite las operaciones frecuentes del sistema, empleando referencias cruzadas cuando es necesario pero aprovechando también documentos embebidos para optimizar el rendimiento en consultas recurrentes. Todo ello sin perder de vista los requisitos de integridad y escalabilidad propios de un entorno hospitalario.
+
+## Construcción del Modelo Físico
+
+El modelo físico establece la forma en que se almacenarán los datos del Sistema de Gestión Hospitalaria en MongoDB. La base de datos está organizada en múltiples colecciones, cada una representando entidades clave como hospitales, empleados, pacientes, tratamientos, fármacos y consultas médicas.
+
+Cada colección contiene documentos en formato BSON, identificados por un campo _id único. Las relaciones entre entidades se gestionan principalmente mediante referencias (ObjectId) y, en ciertos casos, a través de documentos anidados para mejorar el rendimiento de las consultas y simplificar operaciones complejas.
+
+La colección hospitales registra información general, sus áreas de especialización y el personal asociado. La colección pacientes guarda datos personales, información de seguros y un subdocumento con su historial médico y consultas realizadas. Por otro lado, los tratamientos y medicamentos se administran en colecciones separadas, mientras que visitas_medicas actúa como registro transaccional, vinculando médicos con pacientes para mantener un seguimiento detallado de la atención brindada.
+
+Este esquema aprovecha la adaptabilidad y escalabilidad de MongoDB, optimizando la estructura para operaciones frecuentes de lectura y escritura. Además, reduce redundancias y asegura coherencia mediante referencias bien definidas entre colecciones.
+
+## Diagrama del Modelo Físico
+
+
+
+```mermaid
+erDiagram
+    HOSPITALES {
+        ObjectId _id
+        string nombre
+        string direccion
+        string telefono
+        ObjectId director_general_id
+        array areas
+        array personal
+    }
+
+    PERSONAL {
+        ObjectId _id
+        string tipo
+        string nombre
+        string numero_colegiatura
+        string especialidad
+        string telefono
+        string correo
+        double salario
+        array hospitales_asignados
+    }
+
+    PACIENTES {
+        ObjectId _id
+        string numero_historia_clinica
+        string nombre
+        string direccion
+        string telefono
+        string correo
+        array seguros
+        array historial_clinico
+    }
+
+    TRATAMIENTOS {
+        ObjectId _id
+        string nombre
+        string descripcion
+        string area
+        double costo
+    }
+
+    MEDICAMENTOS {
+        ObjectId _id
+        string nombre
+        string fabricante
+        string tipo
+        int stock
+    }
+
+    VISITAS_MEDICAS {
+        ObjectId _id
+        date fecha
+        string hora
+        ObjectId medico_id
+        ObjectId paciente_id
+        string diagnostico
+    }
+
+    HOSPITALES ||--o{ PERSONAL : "incluye"
+    HOSPITALES ||--o{ PACIENTES : "atiende"
+    PACIENTES ||--o{ VISITAS_MEDICAS : "registran"
+    PERSONAL ||--o{ VISITAS_MEDICAS : "realiza"
+    VISITAS_MEDICAS }o--|| TRATAMIENTOS : "aplica"
+    VISITAS_MEDICAS }o--|| MEDICAMENTOS : "receta"
+
+```
+
+El diagrama presenta la estructura de la base de datos hospitalaria en MongoDB, detallando sus colecciones fundamentales (HOSPITALES, PERSONAL, PACIENTES, TRATAMIENTOS, MEDICAMENTOS y VISITAS_MÉDICAS) con sus campos clave y las conexiones lógicas entre ellas.
+
+Cada hospital gestiona un equipo de personal médico y atiende a múltiples pacientes, quienes a su vez registran diversas visitas médicas a lo largo de su historial. Estas consultas vinculan a los médicos con los pacientes y pueden asociarse a distintos tratamientos y medicamentos prescritos.
+
+La arquitectura de la base de datos está optimizada para garantizar consistencia, escalabilidad y un rendimiento eficiente en las operaciones diarias de un centro hospitalario, aprovechando las ventajas de MongoDB para manejar relaciones complejas y datos semiestructurados.
 
 # Estructura Base de Datos
 
