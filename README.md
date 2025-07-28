@@ -125,6 +125,75 @@ Cada centro hospitalario tiene la capacidad de administrar diversos departamento
 
 Esta arquitectura pretende organizar los datos de forma adaptable y con capacidad de crecimiento, maximizando los beneficios del paradigma documental que ofrece MongoDB.
 
+## Diagrama del Modelo Conceptual
+
+```mermaid
+flowchart LR
+ subgraph PROCESO["FLUJO DE ATENCIÓN MÉDICA"]
+    direction LR
+        P2["REGISTRA VISITA"]
+        P1["PACIENTE LLEGA"]
+        P3["MÉDICO ATIENDE"]
+        P4["GENERA DIAGNÓSTICO"]
+        P5["PRESCRIBE TRATAMIENTO"]
+        P6["RECETA MEDICAMENTOS"]
+        P7["ACTUALIZA HISTORIAL"]
+  end
+    A["SISTEMA HOSPITALARIO"] --> B["HOSPITAL"]
+    B -- dirigido_por (1:1) --> C["DIRECTOR"]
+    B -- tiene (1:N) --> D["ÁREAS ESPECIALIZADAS"]
+    B -- emplea (1:N) --> E["PERSONAL"]
+    D -- trabaja_en (1:N) --> E
+    D -- ofrece (1:N) --> I["TRATAMIENTO"]
+    F["PACIENTE"] -- posee (1:1) --> G["HISTORIAL MÉDICO"]
+    F -- realiza (1:N) --> H["VISITA MÉDICA"]
+    E -- atiende (1:N) --> H
+    H -. incluye .-> I
+    H -. receta .-> J["MEDICAMENTO"]
+    B --> B1["• Nombre, dirección<br>• Teléfono, email<br>• Fecha creación<br>• Estado"]
+    C --> C1["• Nombre<br>• Teléfono, email<br>• Salario"]
+    D --> D1["• Nombre<br>• Descripción<br>• Estado"] & D2["CARDIOLOGÍA"] & D3["NEUROLOGÍA"] & D4["OTRAS ESPECIALIDADES"]
+    E --> E1["Tipos de Personal:<br>• 001: Director General<br>• 002: Médico Especialista<br>• 003: Enfermero/a<br>• 004: Administrativo<br>• 005: Mantenimiento"] & E2["• Nombre<br>• Teléfono, email<br>• Especialidad<br>• Salario<br>• Estado"]
+    F --> F1["• Número historia clínica<br>• Nombre, dirección<br>• Teléfono, email<br>• Seguros médicos<br>• Fecha nacimiento<br>• Género, tipo sangre<br>• Estado"]
+    G --> G1["• Diagnósticos (array)<br>• Tratamientos realizados (array)<br>• Resultados (array)<br>• Fecha creación/actualización<br>• Médico responsable"]
+    H --> H1["• Fecha y hora<br>• Diagnóstico<br>• Observaciones<br>• Medicamentos recetados<br>• Estado visita<br>• Costo consulta"]
+    I --> I1["• Nombre, descripción<br>• Costo<br>• Duración estimada<br>• Tipo tratamiento<br>• Estado"]
+    J --> J1["• Nombre, fabricante<br>• Tipo<br>• Cantidad inventario<br>• Precio unitario<br>• Fecha vencimiento<br>• Código medicamento<br>• Estado"]
+    P1 --> P2
+    P2 --> P3
+    P3 --> P4
+    P4 --> P5
+    P5 --> P6
+    P6 --> P7
+    H -.-> PROCESO
+
+     B:::hospital
+     C:::hospital
+     D:::gestion
+     E:::gestion
+     F:::paciente
+     G:::paciente
+     H:::atencion
+     I:::recurso
+     J:::recurso
+     P1:::proceso
+     P2:::proceso
+     P3:::proceso
+     P4:::proceso
+     P5:::proceso
+     P6:::proceso
+     P7:::proceso
+    classDef hospital fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
+    classDef gestion fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    classDef paciente fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
+    classDef atencion fill:#fff3e0,stroke:#f57c00,stroke-width:2px
+    classDef recurso fill:#fce4ec,stroke:#c2185b,stroke-width:2px
+    classDef proceso fill:#f1f8e9,stroke:#689f38,stroke-width:2px
+
+
+
+```
+
 # Estructura Base de Datos
 
 ### Diagrama de la Base de Datos
