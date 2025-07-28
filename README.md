@@ -10,7 +10,7 @@
 
                                       Juan David Saavedra Jaimez
 
-                                         Juan Jose Abril Roman
+                                         Juan José Abril Román
 
 
 
@@ -238,12 +238,24 @@ erDiagram
 ```
 ## Decripción de la estructura
 
-El sistema utiliza un modelo de datos híbrido. Las entidades principales como personal, pacientes y hospitales están en colecciones separadas (normalizadas) para garantizar la integridad y escalabilidad. La información fuertemente acoplada, como el historial de un paciente, se mantiene incrustada (desnormalizada) para optimizar las lecturas.
+El sistema emplea un modelo de datos híbrido. Las entidades centrales, como el personal, los pacientes y los hospitales, se almacenan en colecciones independientes (normalizadas) con el fin de asegurar la integridad y facilitar la escalabilidad. En cambio, la información estrechamente vinculada, como el historial de cada paciente, se guarda de forma incrustada (desnormalizada) para mejorar el rendimiento en las consultas de lectura.
 
-A continuación se describe cada colección:
+A continuación, se detalla cada colección:
 
 ##
 
 ```
 
 ```
+
+
+## Consultas a la Base de Datos
+
+El propósito consiste en desarrollar 100 consultas que permitan examinar la información desde múltiples enfoques. A continuación, se presentan las consultas realizadas.
+
+
+# Desarrollado Por
+
+Juan David Saavedra Jaimez - [Linkedin](https://www.linkedin.com/in/juan-david-saavedra-jaimez-636239374/) - [Github](https://github.com/wilskirby)
+
+Juan José Abril Román - [Linkedin]() - [Github](https://github.com/Juan-771)
