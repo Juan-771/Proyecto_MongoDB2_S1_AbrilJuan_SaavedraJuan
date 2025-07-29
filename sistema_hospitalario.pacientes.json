@@ -1,0 +1,254 @@
+[{
+  "_id": {
+    "$oid": "6888c9f08ee52253e060ebb5"
+  },
+  "numero_historia_clinica": "HC-0001",
+  "nombre": "Juan Pérez López",
+  "direccion": "Calle 45 #12-34, Bucaramanga",
+  "telefono": "3105556789",
+  "email": "juan.perez@email.com",
+  "seguros_medicos": [
+    "Seguro Salud Total",
+    "Colsanitas"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1985-03-15T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "tipo_sangre": "O+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-01-10T00:00:00.000Z"
+  },
+  "historial_clinico": [
+    {
+      "fecha": {
+        "$date": "2025-07-15T00:00:00.000Z"
+      },
+      "diagnostico": "Hipertensión arterial",
+      "codigo_cie10": "I10",
+      "tratamientos": [
+        {
+          "$oid": "6888c9f08ee52253e060ebb6"
+        }
+      ],
+      "medicamentos": [
+        {
+          "$oid": "6888c9f08ee52253e060ebb7"
+        }
+      ],
+      "resultado": "Estable",
+      "medico_responsable": {
+        "$oid": "6888c9f08ee52253e060ebb8"
+      }
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6888c9f08ee52253e060ebb9"
+  },
+  "numero_historia_clinica": "HC-0002",
+  "nombre": "María García Hernández",
+  "direccion": "Carrera 15 #23-45, Bucaramanga",
+  "telefono": "3105556790",
+  "email": "maria.garcia@email.com",
+  "seguros_medicos": [
+    "Nueva EPS",
+    "Sura"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1990-07-22T00:00:00.000Z"
+  },
+  "genero": "femenino",
+  "tipo_sangre": "A+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-02-15T00:00:00.000Z"
+  },
+  "historial_clinico": []
+},
+{
+  "_id": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8e000"
+  },
+  "numero_historia_clinica": "HIC-001",
+  "nombre": "Juan Carlos Pérez López",
+  "direccion": "Calle 45 #12-34, Bucaramanga",
+  "telefono": "3105556789",
+  "email": "juan.perez@email.com",
+  "cedula": "13456789",
+  "seguros_medicos": [
+    "Sanitas",
+    "Colsanitas"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1985-03-15T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "tipo_sangre": "O+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-01-10T00:00:00.000Z"
+  },
+  "hospital_principal": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
+  },
+  "medico_tratante": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8d000"
+  },
+  "ocupacion": "Ingeniero de Sistemas",
+  "estado_civil": "casado",
+  "contacto_emergencia": {
+    "nombre": "María López",
+    "telefono": "3105556790",
+    "parentesco": "esposa"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8e001"
+  },
+  "numero_historia_clinica": "HUS-002",
+  "nombre": "María Elena García Hernández",
+  "direccion": "Carrera 15 #23-45, Bucaramanga",
+  "telefono": "3115556791",
+  "email": "maria.garcia@email.com",
+  "cedula": "37456790",
+  "seguros_medicos": [
+    "Nueva EPS"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1990-07-22T00:00:00.000Z"
+  },
+  "genero": "femenino",
+  "tipo_sangre": "A+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-02-15T00:00:00.000Z"
+  },
+  "hospital_principal": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
+  },
+  "medico_tratante": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8d005"
+  },
+  "ocupacion": "Profesora",
+  "estado_civil": "soltera",
+  "contacto_emergencia": {
+    "nombre": "Carlos García",
+    "telefono": "3115556792",
+    "parentesco": "padre"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8e002"
+  },
+  "nombre": "José Luis Ramírez Díaz",
+  "numero_historia_clinica": "COM-003",
+  "direccion": "Calle 73 #15-28, Bucaramanga",
+  "telefono": "3125556793",
+  "email": "jose.ramirez@email.com",
+  "cedula": "13456791",
+  "seguros_medicos": [
+    "Sura EPS"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1975-11-08T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "tipo_sangre": "B+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-03-20T00:00:00.000Z"
+  },
+  "hospital_principal": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
+  },
+  "medico_tratante": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8d006"
+  },
+  "ocupacion": "Comerciante",
+  "estado_civil": "casado",
+  "contacto_emergencia": {
+    "nombre": "Ana Díaz",
+    "telefono": "3125556794",
+    "parentesco": "esposa"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8e003"
+  },
+  "numero_historia_clinica": "FOS-004",
+  "nombre": "Carmen Lucía Morales Torres",
+  "direccion": "Calle 158 #30-12, Floridablanca",
+  "telefono": "3135556795",
+  "email": "carmen.morales@email.com",
+  "cedula": "37456792",
+  "seguros_medicos": [
+    "Colsanitas",
+    "Seguro Salud Total"
+  ],
+  "fecha_nacimiento": {
+    "$date": {
+      "$numberLong": "-50198400000"
+    }
+  },
+  "genero": "femenino",
+  "tipo_sangre": "AB+",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-04-10T00:00:00.000Z"
+  },
+  "hospital_principal": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
+  },
+  "medico_tratante": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8d008"
+  },
+  "ocupacion": "Administradora",
+  "estado_civil": "viuda",
+  "contacto_emergencia": {
+    "nombre": "Luis Morales",
+    "telefono": "3135556796",
+    "parentesco": "hijo"
+  }
+},
+{
+  "_id": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8e004"
+  },
+  "numero_historia_clinica": "ISA-005",
+  "nombre": "Pedro Antonio Vargas",
+  "direccion": "Calle 69 #8-15, Bucaramanga",
+  "telefono": "3145556797",
+  "email": "pedro.vargas@email.com",
+  "cedula": "13456793",
+  "seguros_medicos": [
+    "Salud Total"
+  ],
+  "fecha_nacimiento": {
+    "$date": "1995-12-18T00:00:00.000Z"
+  },
+  "genero": "masculino",
+  "tipo_sangre": "O-",
+  "estado": "activo",
+  "fecha_registro": {
+    "$date": "2023-05-25T00:00:00.000Z"
+  },
+  "hospital_principal": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
+  },
+  "medico_tratante": {
+    "$oid": "65f1a1b2c3d4e5f6a7b8d010"
+  },
+  "ocupacion": "Estudiante",
+  "estado_civil": "soltero",
+  "contacto_emergencia": {
+    "nombre": "Rosa Vargas",
+    "telefono": "3145556798",
+    "parentesco": "madre"
+  }
+}]

@@ -1,0 +1,201 @@
+[{
+  "_id": {
+    "$oid": "6888c9f18ee52253e060ebcf"
+  },
+  "paciente_id": {
+    "$oid": "6888c9f18ee52253e060ebd0"
+  },
+  "diagnosticos": [
+    {
+      "fecha": {
+        "$date": "2025-07-20T00:00:00.000Z"
+      },
+      "codigo_cie10": "I48",
+      "descripcion": "Fibrilación auricular",
+      "medico_id": {
+        "$oid": "6888c9f18ee52253e060ebd1"
+      },
+      "severidad": "moderada",
+      "estado": "activo"
+    },
+    {
+      "fecha": {
+        "$date": "2025-07-15T00:00:00.000Z"
+      },
+      "codigo_cie10": "I10",
+      "descripcion": "Hipertensión arterial esencial",
+      "medico_id": {
+        "$oid": "6888c9f18ee52253e060ebd2"
+      },
+      "severidad": "leve",
+      "estado": "controlado"
+    }
+  ],
+  "tratamientos_realizados": [
+    {
+      "tratamiento_id": {
+        "$oid": "6888c9f18ee52253e060ebd3"
+      },
+      "fecha_inicio": {
+        "$date": "2025-07-20T00:00:00.000Z"
+      },
+      "fecha_fin": null,
+      "estado": "en_progreso",
+      "respuesta_tratamiento": "buena",
+      "observaciones": "Paciente tolera bien el tratamiento"
+    }
+  ],
+  "resultados": [
+    {
+      "fecha": {
+        "$date": "2025-07-20T00:00:00.000Z"
+      },
+      "tipo_examen": "Electrocardiograma",
+      "resultado": "Ritmo irregular con fibrilación auricular",
+      "observaciones": "Se requiere anticoagulación. FC: 85 lpm irregular",
+      "medico_interprete": {
+        "$oid": "6888c9f18ee52253e060ebd4"
+      },
+      "archivo_resultado": null
+    },
+    {
+      "fecha": {
+        "$date": "2025-07-15T00:00:00.000Z"
+      },
+      "tipo_examen": "Presión arterial",
+      "resultado": "140/90 mmHg",
+      "observaciones": "Presión arterial elevada, requiere medicación",
+      "medico_interprete": {
+        "$oid": "6888c9f18ee52253e060ebd5"
+      },
+      "archivo_resultado": null
+    }
+  ],
+  "fecha_creacion": {
+    "$date": "2025-07-20T00:00:00.000Z"
+  },
+  "fecha_actualizacion": {
+    "$date": "2025-07-20T00:00:00.000Z"
+  },
+  "medico_responsable": {
+    "$oid": "6888c9f18ee52253e060ebd6"
+  },
+  "alergias": [
+    {
+      "sustancia": "Penicilina",
+      "tipo_reaccion": "Urticaria",
+      "severidad": "moderada"
+    }
+  ],
+  "antecedentes_familiares": [
+    {
+      "parentesco": "padre",
+      "condicion": "Hipertensión arterial",
+      "edad_diagnostico": 45
+    }
+  ],
+  "habitos": {
+    "fumador": false,
+    "alcohol": "ocasional",
+    "ejercicio": "sedentario",
+    "dieta": "normal"
+  }
+},
+{
+  "_id": {
+    "$oid": "6888c9f08ee52253e060ec00"
+  },
+  "paciente_id": {
+    "$oid": "6888c9f08ee52253e060ec10"
+  },
+  "antecedentes_personales": "Hipertensión arterial desde 2020",
+  "antecedentes_familiares": "Padre con diabetes tipo 2",
+  "alergias": [
+    "Penicilina"
+  ],
+  "visitas_medicas": [
+    {
+      "$oid": "6888c9f08ee52253e060ed01"
+    },
+    {
+      "$oid": "6888c9f08ee52253e060ed02"
+    }
+  ],
+  "tratamientos": [
+    {
+      "tratamiento_id": {
+        "$oid": "6888c9f08ee52253e060ee01"
+      },
+      "fecha_inicio": {
+        "$date": "2025-06-01T00:00:00.000Z"
+      },
+      "fecha_fin": {
+        "$date": "2025-07-01T00:00:00.000Z"
+      }
+    }
+  ],
+  "observaciones": "El paciente ha respondido bien al tratamiento con Losartán.",
+  "ultima_actualizacion": {
+    "$date": "2025-07-29T14:10:00.000Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "6888c9f08ee52253e060ec01"
+  },
+  "paciente_id": {
+    "$oid": "6888c9f08ee52253e060ec11"
+  },
+  "antecedentes_personales": "Asma infantil, actualmente controlado",
+  "antecedentes_familiares": "Madre con antecedentes alérgicos",
+  "alergias": [],
+  "visitas_medicas": [
+    {
+      "$oid": "6888c9f08ee52253e060ed03"
+    }
+  ],
+  "tratamientos": [
+    {
+      "tratamiento_id": {
+        "$oid": "6888c9f08ee52253e060ee02"
+      },
+      "fecha_inicio": {
+        "$date": "2025-07-10T00:00:00.000Z"
+      },
+      "fecha_fin": null
+    }
+  ],
+  "observaciones": "Control trimestral, sin signos de recaída.",
+  "ultima_actualizacion": {
+    "$date": "2025-07-29T14:15:00.000Z"
+  },
+  "estado": "activo"
+},
+{
+  "_id": {
+    "$oid": "6888c9f08ee52253e060ec02"
+  },
+  "paciente_id": {
+    "$oid": "6888c9f08ee52253e060ec12"
+  },
+  "antecedentes_personales": "Gastritis crónica tratada en 2023",
+  "antecedentes_familiares": "Hermano con úlcera gástrica",
+  "alergias": [
+    "Ibuprofeno"
+  ],
+  "visitas_medicas": [
+    {
+      "$oid": "6888c9f08ee52253e060ed04"
+    },
+    {
+      "$oid": "6888c9f08ee52253e060ed05"
+    }
+  ],
+  "tratamientos": [],
+  "observaciones": "Actualmente sin síntomas, pero requiere seguimiento anual.",
+  "ultima_actualizacion": {
+    "$date": "2025-07-29T14:20:00.000Z"
+  },
+  "estado": "activo"
+}]
