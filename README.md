@@ -65,7 +65,7 @@ Ademas de que en este sistema abarca la gestión completa de un ecosistema hospi
 
 [10. Consultas a la Base de Datos]()
 
-[11. Autor]()
+[11. Autores]()
 
 ## Introducción
 
@@ -103,13 +103,8 @@ cd Proyecto_MongoDB2_S1_AbrilJuan_SaavedraJuan
 
 2.  Ten por seguro que el servicio **MongoDB**  este corriendo en tu Maquina o Dispositivo 
     
-3.  **Cargar los datos de prueba**: Busca dónde está ubicado el archivo  **JS**. Luego, abre  `mongosh`  desde MongoDB Compass, selecciona tu base de datos y carga el script:
-    
-    **En la terminal de mongosh**
-  ```
-    use miHospitalDB
-    load('ruta/a/tu/archivo/insercion_datos.js')
-```
+3.  **Cargar los datos de prueba**: Busca dónde está ubicado el archivo  **JS**. Luego, abre  `mongosh`  desde MongoDB Compass, selecciona tu base de datos y carga el script
+
 Esto creará y poblará todas las colecciones necesarias
 
 ## Caso de Estudio
@@ -198,15 +193,27 @@ flowchart LR
 	
 ```
 
-El diagrama del modelo conceptual plasma la estructura esencial de un sistema hospitalario, integrando las entidades fundamentales junto con los procesos de atención médica que las vinculan.
+**Entidades Principales**
 
-Representa los componentes medulares de la gestión hospitalaria, incluyendo las instituciones médicas, sus equipos directivos, las unidades especializadas, el personal asistencial, los pacientes atendidos, sus respectivos expedientes clínicos, las consultas realizadas, las terapias aplicadas y los medicamentos recetados. Para cada uno de estos elementos se definen sus atributos característicos y las relaciones que los unen.
+**Hospital**: (id_hospital, nombre, direccion, telefono, email, fecha_creacion, estado)
 
-Se observa cómo el personal se distribuye en las diferentes áreas de especialización, cómo cada paciente acumula un historial clínico completo, y de qué manera cada consulta médica queda registrada vinculando profesionales, diagnósticos, tratamientos y medicamentos correspondientes.
+**Director**: (id_director, nombre, telefono, email, salario, id_hospital)
 
-El modelo incorpora además el ciclo completo de atención al paciente, desde su ingreso al centro hospitalario hasta la actualización de su expediente médico, pasando por todas las etapas intermedias de evaluación, diagnóstico y tratamiento. Esta perspectiva holística revela la interconexión entre los aspectos administrativos, clínicos y logísticos que conforman el sistema hospitalario, mostrando cómo funcionan coordinadamente para brindar una atención médica organizada y eficiente.
+**AreaEspecializada**: (id_area, nombre, descripcion, estado, id_hospital)
 
-La representación enfatiza especialmente la coherencia estructural del sistema y la forma en que sus diferentes componentes interactúan para sostener las operaciones diarias de un centro de salud, destacando tanto los elementos estáticos como los procesos dinámicos que garantizan su funcionamiento integral.
+**Personal**: (id_personal, nombre, telefono, email, tipo_personal, especialidad, salario, estado, id_area)
+
+**Paciente**: (numero_historia_clinica, nombre, direccion, telefono, email, seguros_medicos, fecha_nacimiento, genero, tipo_sangre, estado)
+
+**HistorialMedico**: (id_historial, diagnosticos, tratamientos_realizados, resultados, fecha_creacion, fecha_actualizacion, numero_historia_clinica, id_medico_responsable)
+
+**VisitaMedica**: (id_visita, fecha_hora, diagnostico, observaciones, medicamentos_recetados, estado_visita, costo_consulta, numero_historia_clinica, id_personal)
+
+**Tratamiento**: (id_tratamiento, nombre, descripcion, costo, duracion_estimada, tipo_tratamiento, estado, id_area)
+
+**Medicamento**: (codigo_medicamento, nombre, fabricante, tipo, cantidad_inventario, precio_unitario, fecha_vencimiento, estado)
+
+**TratamientoMedicamento**: (id_tratamiento, codigo_medicamento, cantidad_requerida)
 
 
 ## Contrucción del Modelo Lógico
@@ -425,12 +432,200 @@ El sistema emplea un modelo de datos híbrido. Las entidades centrales, como el 
 
 A continuación, se detalla cada colección:
 
-##
+## 1. Directores
+
+```javascript
+        "_id": "ObjectId()",
+        "nombre": "Dr. Carlos Mendoza",
+        "telefono": "607-3101234567",
+        "email": "carlos.mendoza@hospital.com",
+        "salario": 15000000
+```
+
+## 2. Hospitales
+
+```javascript
+
+          "_id": "ObjectId()",
+          "nombre": "Hospital Central Bucaramanga",
+          "direccion": "Calle 123 #45-67, Bucaramanga",
+          "telefono": "607-5551234",
+          "email": "info@hospitalcentral.com",
+          "director_id": "ObjectId('64ab...')",
+          "fecha_creacion": "2020-01-15",
+          "estado": "activo",
+          "areas": [
+            {
+              "nombre": "Cardiología",
+              "codigo": "CARD-01"
+            },
+            {
+              "nombre": "Neurología", 
+              "codigo": "NEUR-02"
+            },
+            {
+              "nombre": "Pediatría",
+              "codigo": "PEDI-03"
+            }
+          ],
+          "personal_asignado": [
+            {
+              "personal_id": "ObjectId('64bc...')",
+              "tipo": "002"
+            },
+            {
+              "personal_id": "ObjectId('64bd...')",
+              "tipo": "003"
+            }
+          ]
+```
+
+## 3. Areas especializadas
+
+```javascript
+
+          "_id": "ObjectId()",
+          "nombre": "Cardiología",
+          "descripcion": "Área especializada en enfermedades del corazón",
+          "hospital_id": "ObjectId('64ab...')",
+          "codigo": "CARD-01",
+          "estado": "activo"
 
 ```
 
+## 4. Personal
+
+```javascript
+
+          "_id": "ObjectId()",
+          "nombre": "Dr. Pedro Gómez",
+          "telefono": "3001234567",
+          "email": "pedro.gomez@hospital.com",
+          "tipo_personal": "002",
+          "numero_colegiatura": "MED-87945",
+          "especialidad": "Cardiología",
+          "salario": 12000000,
+          "hospital_id": "ObjectId('64ab...')",
+          "area_id": "ObjectId('64ac...')",
+          "estado": "activo",
+          "hospitales_asignados": [
+            "ObjectId('64ab...')",
+            "ObjectId('64ac...')"
+          ]
+```
+## 5. Pacientes
+
+```javascript
+          "_id": "ObjectId()",
+          "numero_historia_clinica": "HC-0001",
+          "nombre": "Juan Pérez López",
+          "direccion": "Calle 45 #12-34, Bucaramanga",
+          "telefono": "3105556789",
+          "email": "juan.perez@email.com",
+          "seguros_medicos": [
+            "Seguro Salud Total",
+            "Colsanitas"
+          ],
+          "fecha_nacimiento": "1985-03-15",
+          "genero": "masculino",
+          "tipo_sangre": "O+",
+          "estado": "activo",
+          "historial_clinico": [
+            {
+              "fecha": "2025-07-15",
+              "diagnostico": "Hipertensión arterial",
+              "codigo_cie10": "I10",
+              "tratamientos": ["ObjectId('64ef...')"],
+              "medicamentos": ["ObjectId('64eg...')"],
+              "resultado": "Estable",
+              "medico_responsable": "ObjectId('64bc...')"
+            }
+          ]
 ```
 
+## 6. Tratamientos
+
+```javascript
+        "_id": "ObjectId()",
+          "nombre": "Terapia Intensiva Cardiovascular",
+          "descripcion": "Tratamiento para pacientes con infarto agudo de miocardio",
+          "area_medica_id": "ObjectId('64ac...')",
+          "area": "Cardiología",
+          "costo": 500000,
+          "duracion_estimada": 7,
+          "tipo_tratamiento": "terapia",
+          "estado": "disponible"
+```
+
+## 7. Medicamentos
+
+```javascript
+          "_id": "ObjectId()",
+          "nombre": "Aspirina 100mg",
+          "fabricante": "Bayer",
+          "tipo": "tableta",
+          "cantidad_inventario": 200,
+          "precio_unitario": 150,
+          "fecha_vencimiento": "2025-12-31",
+          "codigo_medicamento": "MED-001",
+          "estado": "disponible"
+```
+
+## 8. Visitas Medicas
+
+```javascript
+          "_id": "ObjectId()",
+          "fecha": "2025-07-20",
+          "hora": "10:30",
+          "medico_id": "ObjectId('64bc...')",
+          "paciente_id": "ObjectId('64aa...')",
+          "diagnostico": "Arritmia cardíaca",
+          "observaciones": "Paciente presenta palpitaciones frecuentes",
+          "tratamiento_id": "ObjectId('64ef...')",
+          "medicamentos_recetados": [
+            {
+              "medicamento_id": "ObjectId('64eg...')",
+              "cantidad": 30,
+              "dosificacion": "1 tableta cada 8 horas",
+              "duracion": "30 días"
+            }
+          ],
+          "estado_visita": "completada",
+          "costo_consulta": 150000
+```
+## 9. Historial Medico
+
+```javascript
+        "_id": "ObjectId()",
+          "paciente_id": "ObjectId('64aa...')",
+          "diagnosticos": [
+            {
+              "fecha": "2025-07-20",
+              "codigo_cie10": "I48",
+              "descripcion": "Fibrilación auricular",
+              "medico_id": "ObjectId('64bc...')"
+            }
+          ],
+          "tratamientos_realizados": [
+            {
+              "tratamiento_id": "ObjectId('64ef...')",
+              "fecha_inicio": "2025-07-20",
+              "fecha_fin": null,
+              "estado": "en_progreso"
+            }
+          ],
+          "resultados": [
+            {
+              "fecha": "2025-07-20",
+              "tipo_examen": "Electrocardiograma",
+              "resultado": "Ritmo irregular con fibrilación auricular",
+              "observaciones": "Se requiere anticoagulación"
+            }
+          ],
+          "fecha_creacion": "2025-07-20",
+          "fecha_actualizacion": "2025-07-20",
+          "medico_responsable": "ObjectId('64bc...')"
+```
 
 ## Consultas a la Base de Datos
 
