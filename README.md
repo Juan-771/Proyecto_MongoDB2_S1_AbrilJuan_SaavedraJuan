@@ -631,6 +631,8 @@ A continuación, se detalla cada colección:
 
 El propósito consiste en desarrollar 100 consultas que permitan examinar la información desde múltiples enfoques. A continuación, se presentan las consultas realizadas.
 
+## Video_Exposicion
+https://drive.google.com/drive/folders/1jmx1onHhaOgnB9pPga1hH7u41KYPsTSi?usp=sharing
 
 # Desarrollado Por
 
