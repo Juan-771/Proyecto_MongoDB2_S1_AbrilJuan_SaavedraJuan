@@ -1,2179 +1,380 @@
-[
-    {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eba0"
-    },
-    "nombre": "Cardiología",
-    "descripcion": "Área especializada en enfermedades del corazón y sistema cardiovascular",
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060eba1"
-    },
-    "codigo": "CARD-01",
-    "estado": "activo",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:36.575Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eba2"
-    },
-    "nombre": "Neurología",
-    "descripcion": "Área especializada en enfermedades del sistema nervioso",
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060eba3"
-    },
-    "codigo": "NEUR-02",
-    "estado": "activo",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:36.575Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eba4"
-    },
-    "nombre": "Pediatría",
-    "descripcion": "Área especializada en atención médica infantil",
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060eba5"
-    },
-    "codigo": "PEDI-03",
-    "estado": "activo",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:36.575Z"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eba6"
-    },
-    "nombre": "Medicina General",
-    "descripcion": "Área de atención médica general y consulta externa",
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060eba7"
-    },
-    "codigo": "MGEN-04",
-    "estado": "activo",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:36.575Z"
-    }
-  },
-
-  {
-    "_id": {
-      "$oid": "6888c9ef8ee52253e060eb98"
-    },
-    "nombre": "Dr. Carlos Mendoza",
-    "telefono": "607-3101234567",
-    "email": "carlos.mendoza@hospital.com",
-    "salario": 15000000,
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:35.076Z"
-    },
-    "estado": "activo"
-  },
-  {
-    "_id": {
-      "$oid": "6888c9ef8ee52253e060eb99"
-    },
-    "nombre": "Dra. María Elena Rodríguez",
-    "telefono": "607-3101234568",
-    "email": "maria.rodriguez@hospital.com",
-    "salario": 16000000,
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:35.076Z"
-    },
-    "estado": "activo"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d0"
-    },
-    "nombre": "Dr. Carlos Alberto Pérez Mendoza",
-    "telefono": "607-6380505",
-    "email": "director.hic@fcv.org",
-    "salario": 25000000,
-    "fecha_creacion": {
-      "$date": "2020-01-15T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "especialidad": "Cardiología Intervencionista",
-    "experiencia_anos": 18,
-    "titulo_universitario": "Universidad Nacional de Colombia"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d1"
-    },
-    "nombre": "Dra. María Elena Torres Rodríguez",
-    "telefono": "607-6570000",
-    "email": "direccion@hus.gov.co",
-    "salario": 20000000,
-    "fecha_creacion": {
-      "$date": "2018-06-10T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "especialidad": "Medicina Interna",
-    "experiencia_anos": 22,
-    "titulo_universitario": "Universidad Industrial de Santander"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d2"
-    },
-    "nombre": "Dr. Gustavo Adolfo Morales",
-    "telefono": "607-6320800",
-    "email": "director@loscomuneros.com",
-    "salario": 18000000,
-    "fecha_creacion": {
-      "$date": "2019-03-20T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "especialidad": "Cirugía General",
-    "experiencia_anos": 15,
-    "titulo_universitario": "Universidad Pontificia Bolivariana"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d3"
-    },
-    "nombre": "Dra. Ana Lucía Vargas Castro",
-    "telefono": "607-6438311",
-    "email": "direccion@clinicafoscal.com",
-    "salario": 22000000,
-    "fecha_creacion": {
-      "$date": "2017-08-12T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "especialidad": "Ginecología y Obstetricia",
-    "experiencia_anos": 20,
-    "titulo_universitario": "Universidad del Rosario"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d4"
-    },
-    "nombre": "Dr. Roberto Silva Martínez",
-    "telefono": "607-6346595",
-    "email": "director@isabu.gov.co",
-    "salario": 16000000,
-    "fecha_creacion": {
-      "$date": "2021-01-10T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "especialidad": "Salud Pública",
-    "experiencia_anos": 12,
-    "titulo_universitario": "Universidad de Santander"
-  },
-
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebcf"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f18ee52253e060ebd0"
-    },
-    "diagnosticos": [
-      {
-        "fecha": {
-          "$date": "2025-07-20T00:00:00.000Z"
-        },
-        "codigo_cie10": "I48",
-        "descripcion": "Fibrilación auricular",
-        "medico_id": {
-          "$oid": "6888c9f18ee52253e060ebd1"
-        },
-        "severidad": "moderada",
-        "estado": "activo"
-      },
-      {
-        "fecha": {
-          "$date": "2025-07-15T00:00:00.000Z"
-        },
-        "codigo_cie10": "I10",
-        "descripcion": "Hipertensión arterial esencial",
-        "medico_id": {
-          "$oid": "6888c9f18ee52253e060ebd2"
-        },
-        "severidad": "leve",
-        "estado": "controlado"
-      }
-    ],
-    "tratamientos_realizados": [
-      {
-        "tratamiento_id": {
-          "$oid": "6888c9f18ee52253e060ebd3"
-        },
-        "fecha_inicio": {
-          "$date": "2025-07-20T00:00:00.000Z"
-        },
-        "fecha_fin": null,
-        "estado": "en_progreso",
-        "respuesta_tratamiento": "buena",
-        "observaciones": "Paciente tolera bien el tratamiento"
-      }
-    ],
-    "resultados": [
-      {
-        "fecha": {
-          "$date": "2025-07-20T00:00:00.000Z"
-        },
-        "tipo_examen": "Electrocardiograma",
-        "resultado": "Ritmo irregular con fibrilación auricular",
-        "observaciones": "Se requiere anticoagulación. FC: 85 lpm irregular",
-        "medico_interprete": {
-          "$oid": "6888c9f18ee52253e060ebd4"
-        },
-        "archivo_resultado": null
-      },
-      {
-        "fecha": {
-          "$date": "2025-07-15T00:00:00.000Z"
-        },
-        "tipo_examen": "Presión arterial",
-        "resultado": "140/90 mmHg",
-        "observaciones": "Presión arterial elevada, requiere medicación",
-        "medico_interprete": {
-          "$oid": "6888c9f18ee52253e060ebd5"
-        },
-        "archivo_resultado": null
-      }
-    ],
-    "fecha_creacion": {
-      "$date": "2025-07-20T00:00:00.000Z"
-    },
-    "fecha_actualizacion": {
-      "$date": "2025-07-20T00:00:00.000Z"
-    },
-    "medico_responsable": {
-      "$oid": "6888c9f18ee52253e060ebd6"
-    },
-    "alergias": [
-      {
-        "sustancia": "Penicilina",
-        "tipo_reaccion": "Urticaria",
-        "severidad": "moderada"
-      }
-    ],
-    "antecedentes_familiares": [
-      {
-        "parentesco": "padre",
-        "condicion": "Hipertensión arterial",
-        "edad_diagnostico": 45
-      }
-    ],
-    "habitos": {
-      "fumador": false,
-      "alcohol": "ocasional",
-      "ejercicio": "sedentario",
-      "dieta": "normal"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ec00"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f08ee52253e060ec10"
-    },
-    "antecedentes_personales": "Hipertensión arterial desde 2020",
-    "antecedentes_familiares": "Padre con diabetes tipo 2",
-    "alergias": [
-      "Penicilina"
-    ],
-    "visitas_medicas": [
-      {
-        "$oid": "6888c9f08ee52253e060ed01"
-      },
-      {
-        "$oid": "6888c9f08ee52253e060ed02"
-      }
-    ],
-    "tratamientos": [
-      {
-        "tratamiento_id": {
-          "$oid": "6888c9f08ee52253e060ee01"
-        },
-        "fecha_inicio": {
-          "$date": "2025-06-01T00:00:00.000Z"
-        },
-        "fecha_fin": {
-          "$date": "2025-07-01T00:00:00.000Z"
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "nombre",
+            "direccion",
+            "director_general_id",
+            "telefono"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string",
+                "description": "Nombre del hospital"
+            },
+            "direccion": {
+                "bsonType": "string",
+                "description": "Dirección del hospital"
+            },
+            "director_general_id": {
+                "bsonType": "objectId",
+                "description": "ID del director general"
+            },
+            "telefono": {
+                "bsonType": "int",
+                "description": "Número telefónico del hospital"
+            },
+            "email": {
+                "bsonType": "string",
+                "description": "Correo electrónico de contacto"
+            },
+            "fecha_creacion": {
+                "bsonType": "date",
+                "description": "Fecha de creación del hospital"
+            },
+            "estado": {
+                "bsonType": "string",
+                "description": "Estado actual del hospital (activo, inactivo, etc.)"
+            }
         }
-      }
-    ],
-    "observaciones": "El paciente ha respondido bien al tratamiento con Losartán.",
-    "ultima_actualizacion": {
-      "$date": "2025-07-29T14:10:00.000Z"
-    },
-    "estado": "activo"
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ec01"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f08ee52253e060ec11"
-    },
-    "antecedentes_personales": "Asma infantil, actualmente controlado",
-    "antecedentes_familiares": "Madre con antecedentes alérgicos",
-    "alergias": [],
-    "visitas_medicas": [
-      {
-        "$oid": "6888c9f08ee52253e060ed03"
-      }
-    ],
-    "tratamientos": [
-      {
-        "tratamiento_id": {
-          "$oid": "6888c9f08ee52253e060ee02"
-        },
-        "fecha_inicio": {
-          "$date": "2025-07-10T00:00:00.000Z"
-        },
-        "fecha_fin": null
-      }
-    ],
-    "observaciones": "Control trimestral, sin signos de recaída.",
-    "ultima_actualizacion": {
-      "$date": "2025-07-29T14:15:00.000Z"
-    },
-    "estado": "activo"
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ec02"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f08ee52253e060ec12"
-    },
-    "antecedentes_personales": "Gastritis crónica tratada en 2023",
-    "antecedentes_familiares": "Hermano con úlcera gástrica",
-    "alergias": [
-      "Ibuprofeno"
-    ],
-    "visitas_medicas": [
-      {
-        "$oid": "6888c9f08ee52253e060ed04"
-      },
-      {
-        "$oid": "6888c9f08ee52253e060ed05"
-      }
-    ],
-    "tratamientos": [],
-    "observaciones": "Actualmente sin síntomas, pero requiere seguimiento anual.",
-    "ultima_actualizacion": {
-      "$date": "2025-07-29T14:20:00.000Z"
-    },
-    "estado": "activo"
-},
+    }
+}
+
 
 {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eb9a"
-    },
-    "nombre": "Hospital Central Bucaramanga",
-    "direccion": "Calle 123 #45-67, Bucaramanga",
-    "telefono": "607-5551234",
-    "email": "info@hospitalcentral.com",
-    "director_id": {
-      "$oid": "6888c9f08ee52253e060eb9b"
-    },
-    "fecha_creacion": {
-      "$date": "2020-01-15T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "areas": [
-      {
-        "nombre": "Cardiología",
-        "codigo": "CARD-01"
-      },
-      {
-        "nombre": "Neurología",
-        "codigo": "NEUR-02"
-      },
-      {
-        "nombre": "Pediatría",
-        "codigo": "PEDI-03"
-      },
-      {
-        "nombre": "Medicina General",
-        "codigo": "MGEN-04"
-      }
-    ],
-    "personal_asignado": [
-      {
-        "personal_id": {
-          "$oid": "6888c9f08ee52253e060eb9c"
-        },
-        "tipo": "002"
-      },
-      {
-        "personal_id": {
-          "$oid": "6888c9f08ee52253e060eb9d"
-        },
-        "tipo": "003"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eb9e"
-    },
-    "nombre": "Hospital San Rafael",
-    "direccion": "Carrera 27 #18-45, Bucaramanga",
-    "telefono": "607-5551235",
-    "email": "info@sanrafael.com",
-    "director_id": {
-      "$oid": "6888c9f08ee52253e060eb9f"
-    },
-    "fecha_creacion": {
-      "$date": "2018-06-10T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "areas": [
-      {
-        "nombre": "Urgencias",
-        "codigo": "EMER-01"
-      },
-      {
-        "nombre": "Cirugía General",
-        "codigo": "CIRU-01"
-      }
-    ],
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "nombre": "Hospital Internacional de Colombia - HIC",
-    "direccion": "Km 7 Autopista Bucaramanga - Piedecuesta, Valle de Menzulí",
-    "telefono": "607-6380505",
-    "email": "info@hic.fcv.org",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d0"
-    },
-    "fecha_creacion": {
-      "$date": "1986-05-20T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "privado",
-    "nivel_atencion": "IV",
-    "certificaciones": [
-      "Joint Commission International",
-      "Mayo Clinic Care Network"
-    ],
-    "areas": [
-      {
-        "nombre": "Cardiología",
-        "codigo": "CARD-HIC-01"
-      },
-      {
-        "nombre": "Neurología",
-        "codigo": "NEUR-HIC-02"
-      },
-      {
-        "nombre": "Oncología",
-        "codigo": "ONCO-HIC-03"
-      },
-      {
-        "nombre": "Trasplantes",
-        "codigo": "TRAS-HIC-04"
-      },
-      {
-        "nombre": "Cirugía Cardiovascular",
-        "codigo": "CICV-HIC-05"
-      },
-      {
-        "nombre": "Medicina Nuclear",
-        "codigo": "MENU-HIC-06"
-      },
-      {
-        "nombre": "Pediatría",
-        "codigo": "PEDI-HIC-07"
-      },
-      {
-        "nombre": "Urología",
-        "codigo": "UROL-HIC-08"
-      }
-    ],
-    "capacidad_camas": 320,
-    "numero_especialidades": 60,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "nombre": "Hospital Universitario de Santander - HUS",
-    "direccion": "Calle 33 # 28-126, Bucaramanga",
-    "telefono": "607-6570000",
-    "email": "info@hus.gov.co",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d1"
-    },
-    "fecha_creacion": {
-      "$date": "1970-08-15T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "publico",
-    "nivel_atencion": "III",
-    "certificaciones": [
-      "ISO 9001:2015",
-      "ICONTEC"
-    ],
-    "areas": [
-      {
-        "nombre": "Medicina Interna",
-        "codigo": "MINT-HUS-01"
-      },
-      {
-        "nombre": "Cirugía General",
-        "codigo": "CGEN-HUS-02"
-      },
-      {
-        "nombre": "Ginecología",
-        "codigo": "GINE-HUS-03"
-      },
-      {
-        "nombre": "Pediatría",
-        "codigo": "PEDI-HUS-04"
-      },
-      {
-        "nombre": "Urgencias",
-        "codigo": "EMER-HUS-05"
-      },
-      {
-        "nombre": "Ortopedia",
-        "codigo": "ORTO-HUS-06"
-      },
-      {
-        "nombre": "Psiquiatría",
-        "codigo": "PSIQ-HUS-07"
-      },
-      {
-        "nombre": "Neurocirugía",
-        "codigo": "NCIR-HUS-08"
-      }
-    ],
-    "capacidad_camas": 450,
-    "numero_especialidades": 35,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "nombre": "Hospital Universitario Los Comuneros",
-    "direccion": "Calle 73 # 20-31, Bucaramanga",
-    "telefono": "607-6320800",
-    "email": "info@loscomuneros.com",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d2"
-    },
-    "fecha_creacion": {
-      "$date": "1975-11-10T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "universitario",
-    "nivel_atencion": "III",
-    "certificaciones": [
-      "ICONTEC",
-      "Habilitación MinSalud"
-    ],
-    "areas": [
-      {
-        "nombre": "Medicina Familiar",
-        "codigo": "MFAM-COM-01"
-      },
-      {
-        "nombre": "Medicina Interna",
-        "codigo": "MINT-COM-02"
-      },
-      {
-        "nombre": "Cirugía General",
-        "codigo": "CGEN-COM-03"
-      },
-      {
-        "nombre": "Pediatría",
-        "codigo": "PEDI-COM-04"
-      },
-      {
-        "nombre": "Ginecología",
-        "codigo": "GINE-COM-05"
-      },
-      {
-        "nombre": "Anestesiología",
-        "codigo": "ANES-COM-06"
-      },
-      {
-        "nombre": "Radiología",
-        "codigo": "RADI-COM-07"
-      }
-    ],
-    "capacidad_camas": 280,
-    "numero_especialidades": 25,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "nombre": "Clínica FOSCAL Internacional",
-    "direccion": "Calle 158 # 20-55, Floridablanca",
-    "telefono": "607-6438311",
-    "email": "info@clinicafoscal.com",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d3"
-    },
-    "fecha_creacion": {
-      "$date": "1992-03-18T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "privado",
-    "nivel_atencion": "IV",
-    "certificaciones": [
-      "Joint Commission International",
-      "ISO 15189"
-    ],
-    "areas": [
-      {
-        "nombre": "Cardiología",
-        "codigo": "CARD-FOS-01"
-      },
-      {
-        "nombre": "Oncología",
-        "codigo": "ONCO-FOS-02"
-      },
-      {
-        "nombre": "Neurología",
-        "codigo": "NEUR-FOS-03"
-      },
-      {
-        "nombre": "Ginecología",
-        "codigo": "GINE-FOS-04"
-      },
-      {
-        "nombre": "Cirugía Plástica",
-        "codigo": "CPLA-FOS-05"
-      },
-      {
-        "nombre": "Ortopedia",
-        "codigo": "ORTO-FOS-06"
-      },
-      {
-        "nombre": "Medicina Nuclear",
-        "codigo": "MENU-FOS-07"
-      },
-      {
-        "nombre": "Radiología",
-        "codigo": "RADI-FOS-08"
-      }
-    ],
-    "capacidad_camas": 200,
-    "numero_especialidades": 45,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-    },
-    "nombre": "ISABU - Instituto de Salud de Bucaramanga",
-    "direccion": "Calle 69 # 10-01, Bucaramanga",
-    "telefono": "607-6346595",
-    "email": "info@isabu.gov.co",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d4"
-    },
-    "fecha_creacion": {
-      "$date": "1993-07-22T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "publico",
-    "nivel_atencion": "I",
-    "certificaciones": [
-      "Habilitación MinSalud"
-    ],
-    "areas": [
-      {
-        "nombre": "Medicina General",
-        "codigo": "MGEN-ISA-01"
-      },
-      {
-        "nombre": "Odontología",
-        "codigo": "ODON-ISA-02"
-      },
-      {
-        "nombre": "Pediatría",
-        "codigo": "PEDI-ISA-03"
-      },
-      {
-        "nombre": "Ginecología",
-        "codigo": "GINE-ISA-04"
-      },
-      {
-        "nombre": "Psicología",
-        "codigo": "PSIC-ISA-05"
-      },
-      {
-        "nombre": "Medicina Familiar",
-        "codigo": "MFAM-ISA-06"
-      },
-      {
-        "nombre": "Promoción y Prevención",
-        "codigo": "PYPR-ISA-07"
-      }
-    ],
-    "capacidad_camas": 120,
-    "numero_especialidades": 15,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e5"
-    },
-    "nombre": "Clínica Chicamocha",
-    "direccion": "Calle 93 # 19-50, Bucaramanga",
-    "telefono": "607-6853000",
-    "email": "info@clinicachicamocha.com",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d0"
-    },
-    "fecha_creacion": {
-      "$date": "1988-09-12T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "privado",
-    "nivel_atencion": "III",
-    "certificaciones": [
-      "ICONTEC",
-      "Habilitación MinSalud"
-    ],
-    "areas": [
-      {
-        "nombre": "Cardiología",
-        "codigo": "CARD-CHI-01"
-      },
-      {
-        "nombre": "Medicina Interna",
-        "codigo": "MINT-CHI-02"
-      },
-      {
-        "nombre": "Cirugía General",
-        "codigo": "CGEN-CHI-03"
-      },
-      {
-        "nombre": "Ortopedia",
-        "codigo": "ORTO-CHI-04"
-      },
-      {
-        "nombre": "Ginecología",
-        "codigo": "GINE-CHI-05"
-      },
-      {
-        "nombre": "Urología",
-        "codigo": "UROL-CHI-06"
-      }
-    ],
-    "capacidad_camas": 150,
-    "numero_especialidades": 20,
-    "personal_asignado": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e6"
-    },
-    "nombre": "Centro Médico Carlos Ardila Lülle",
-    "direccion": "Calle 155A # 23-09, Floridablanca",
-    "telefono": "607-6392323",
-    "email": "info@foscal.com.co",
-    "director_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9d3"
-    },
-    "fecha_creacion": {
-      "$date": "1990-01-25T00:00:00.000Z"
-    },
-    "estado": "activo",
-    "tipo": "privado",
-    "nivel_atencion": "III",
-    "certificaciones": [
-      "ISO 9001:2015"
-    ],
-    "areas": [
-      {
-        "nombre": "Cardiología",
-        "codigo": "CARD-CAL-01"
-      },
-      {
-        "nombre": "Neumología",
-        "codigo": "NEUM-CAL-02"
-      },
-      {
-        "nombre": "Gastroenterología",
-        "codigo": "GAST-CAL-03"
-      },
-      {
-        "nombre": "Endocrinología",
-        "codigo": "ENDO-CAL-04"
-      },
-      {
-        "nombre": "Dermatología",
-        "codigo": "DERM-CAL-05"
-      }
-    ],
-    "capacidad_camas": 100,
-    "numero_especialidades": 18,
-    "personal_asignado": []
-  },
-
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebc3"
-    },
-    "nombre": "Aspirina 100mg",
-    "fabricante": "Bayer",
-    "tipo": "tableta",
-    "cantidad_inventario": 200,
-    "precio_unitario": 150,
-    "fecha_vencimiento": {
-      "$date": "2025-12-31T00:00:00.000Z"
-    },
-    "codigo_medicamento": "MED-001",
-    "estado": "disponible",
-    "indicaciones": "Antiagregante plaquetario",
-    "contraindicaciones": "Alergia al ácido acetilsalicílico"
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebc4"
-    },
-    "nombre": "Losartán 50mg",
-    "fabricante": "Lafrancol",
-    "tipo": "tableta",
-    "cantidad_inventario": 150,
-    "precio_unitario": 280,
-    "fecha_vencimiento": {
-      "$date": "2026-03-15T00:00:00.000Z"
-    },
-    "codigo_medicamento": "MED-002",
-    "estado": "disponible",
-    "indicaciones": "Antihipertensivo",
-    "contraindicaciones": "Embarazo, insuficiencia renal severa"
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebc5"
-    },
-    "nombre": "Ibuprofeno 400mg",
-    "fabricante": "Genfar",
-    "tipo": "tableta",
-    "cantidad_inventario": 300,
-    "precio_unitario": 120,
-    "fecha_vencimiento": {
-      "$date": "2025-09-30T00:00:00.000Z"
-    },
-    "codigo_medicamento": "MED-003",
-    "estado": "disponible",
-    "indicaciones": "Antiinflamatorio, analgésico",
-    "contraindicaciones": "Úlcera péptica activa"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f001"
-    },
-    "nombre": "Clopidogrel 75mg",
-    "fabricante": "Pfizer",
-    "tipo": "tableta",
-    "cantidad_inventario": 500,
-    "precio_unitario": 2800,
-    "fecha_vencimiento": {
-      "$date": "2026-12-31T00:00:00.000Z"
-    },
-    "codigo_medicamento": "CARD-001",
-    "estado": "disponible",
-    "indicaciones": "Antiagregante plaquetario para prevención cardiovascular",
-    "contraindicaciones": "Sangrado activo, alergia al clopidogrel",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "requiere_formula_medica": true
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f002"
-    },
-    "nombre": "Amoxicilina 500mg",
-    "fabricante": "Tecnoquímicas",
-    "tipo": "cápsula",
-    "cantidad_inventario": 1200,
-    "precio_unitario": 700,
-    "fecha_vencimiento": {
-      "$date": "2025-11-20T00:00:00.000Z"
-    },
-    "codigo_medicamento": "INF-002",
-    "estado": "disponible",
-    "indicaciones": "Tratamiento de infecciones bacterianas",
-    "contraindicaciones": "Hipersensibilidad a penicilinas",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "requiere_formula_medica": true
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f003"
-    },
-    "nombre": "Metformina 850mg",
-    "fabricante": "La Santé",
-    "tipo": "tableta",
-    "cantidad_inventario": 900,
-    "precio_unitario": 500,
-    "fecha_vencimiento": {
-      "$date": "2027-02-10T00:00:00.000Z"
-    },
-    "codigo_medicamento": "DIAB-003",
-    "estado": "disponible",
-    "indicaciones": "Tratamiento de diabetes tipo 2",
-    "contraindicaciones": "Insuficiencia renal severa",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "requiere_formula_medica": true
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f004"
-    },
-    "nombre": "Ibuprofeno 400mg",
-    "fabricante": "MK",
-    "tipo": "tableta",
-    "cantidad_inventario": 2000,
-    "precio_unitario": 300,
-    "fecha_vencimiento": {
-      "$date": "2026-06-15T00:00:00.000Z"
-    },
-    "codigo_medicamento": "ANALG-004",
-    "estado": "disponible",
-    "indicaciones": "Dolor leve a moderado, antiinflamatorio",
-    "contraindicaciones": "Úlcera péptica activa, insuficiencia renal",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "requiere_formula_medica": false
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f005"
-    },
-    "nombre": "Losartán 50mg",
-    "fabricante": "Sandoz",
-    "tipo": "tableta",
-    "cantidad_inventario": 800,
-    "precio_unitario": 1200,
-    "fecha_vencimiento": {
-      "$date": "2026-09-30T00:00:00.000Z"
-    },
-    "codigo_medicamento": "CARD-005",
-    "estado": "disponible",
-    "indicaciones": "Tratamiento de hipertensión",
-    "contraindicaciones": "Embarazo, hipersensibilidad al losartán",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-    },
-    "requiere_formula_medica": true
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f006"
-    },
-    "nombre": "Omeprazol 20mg",
-    "fabricante": "Genfar",
-    "tipo": "cápsula",
-    "cantidad_inventario": 1000,
-    "precio_unitario": 450,
-    "fecha_vencimiento": {
-      "$date": "2027-01-15T00:00:00.000Z"
-    },
-    "codigo_medicamento": "GAST-006",
-    "estado": "disponible",
-    "indicaciones": "Tratamiento de reflujo gastroesofágico",
-    "contraindicaciones": "Hipersensibilidad al omeprazol",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e5"
-    },
-    "requiere_formula_medica": true
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f007"
-    },
-    "nombre": "Salbutamol Inhalador 100mcg",
-    "fabricante": "GSK",
-    "tipo": "inhalador",
-    "cantidad_inventario": 300,
-    "precio_unitario": 6500,
-    "fecha_vencimiento": {
-      "$date": "2025-10-01T00:00:00.000Z"
-    },
-    "codigo_medicamento": "RESP-007",
-    "estado": "disponible",
-    "indicaciones": "Tratamiento de asma y EPOC",
-    "contraindicaciones": "Taquicardia, alergia a salbutamol",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e6"
-    },
-    "requiere_formula_medica": true
-  },
-
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ebb5"
-    },
-    "numero_historia_clinica": "HC-0001",
-    "nombre": "Juan Pérez López",
-    "direccion": "Calle 45 #12-34, Bucaramanga",
-    "telefono": "3105556789",
-    "email": "juan.perez@email.com",
-    "seguros_medicos": [
-      "Seguro Salud Total",
-      "Colsanitas"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1985-03-15T00:00:00.000Z"
-    },
-    "genero": "masculino",
-    "tipo_sangre": "O+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-01-10T00:00:00.000Z"
-    },
-    "historial_clinico": [
-      {
-        "fecha": {
-          "$date": "2025-07-15T00:00:00.000Z"
-        },
-        "diagnostico": "Hipertensión arterial",
-        "codigo_cie10": "I10",
-        "tratamientos": [
-          {
-            "$oid": "6888c9f08ee52253e060ebb6"
-          }
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "nombre",
+            "telefono",
+            "tipo_personal",
+            "hospital_id",
+            "area_id"
         ],
-        "medicamentos": [
-          {
-            "$oid": "6888c9f08ee52253e060ebb7"
-          }
-        ],
-        "resultado": "Estable",
-        "medico_responsable": {
-          "$oid": "6888c9f08ee52253e060ebb8"
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "telefono": {
+                "bsonType": "string"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "salario": {
+                "bsonType": "string"
+            },
+            "tipo_personal": {
+                "bsonType": "string"
+            },
+            "hospital_id": {
+                "bsonType": "objectId"
+            },
+            "area_id": {
+                "bsonType": "objectId"
+            }
         }
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ebb9"
-    },
-    "numero_historia_clinica": "HC-0002",
-    "nombre": "María García Hernández",
-    "direccion": "Carrera 15 #23-45, Bucaramanga",
-    "telefono": "3105556790",
-    "email": "maria.garcia@email.com",
-    "seguros_medicos": [
-      "Nueva EPS",
-      "Sura"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1990-07-22T00:00:00.000Z"
-    },
-    "genero": "femenino",
-    "tipo_sangre": "A+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-02-15T00:00:00.000Z"
-    },
-    "historial_clinico": []
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8e000"
-    },
-    "numero_historia_clinica": "HIC-001",
-    "nombre": "Juan Carlos Pérez López",
-    "direccion": "Calle 45 #12-34, Bucaramanga",
-    "telefono": "3105556789",
-    "email": "juan.perez@email.com",
-    "cedula": "13456789",
-    "seguros_medicos": [
-      "Sanitas",
-      "Colsanitas"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1985-03-15T00:00:00.000Z"
-    },
-    "genero": "masculino",
-    "tipo_sangre": "O+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-01-10T00:00:00.000Z"
-    },
-    "hospital_principal": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "medico_tratante": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d000"
-    },
-    "ocupacion": "Ingeniero de Sistemas",
-    "estado_civil": "casado",
-    "contacto_emergencia": {
-      "nombre": "María López",
-      "telefono": "3105556790",
-      "parentesco": "esposa"
     }
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8e001"
-    },
-    "numero_historia_clinica": "HUS-002",
-    "nombre": "María Elena García Hernández",
-    "direccion": "Carrera 15 #23-45, Bucaramanga",
-    "telefono": "3115556791",
-    "email": "maria.garcia@email.com",
-    "cedula": "37456790",
-    "seguros_medicos": [
-      "Nueva EPS"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1990-07-22T00:00:00.000Z"
-    },
-    "genero": "femenino",
-    "tipo_sangre": "A+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-02-15T00:00:00.000Z"
-    },
-    "hospital_principal": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "medico_tratante": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d005"
-    },
-    "ocupacion": "Profesora",
-    "estado_civil": "soltera",
-    "contacto_emergencia": {
-      "nombre": "Carlos García",
-      "telefono": "3115556792",
-      "parentesco": "padre"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8e002"
-    },
-    "nombre": "José Luis Ramírez Díaz",
-    "numero_historia_clinica": "COM-003",
-    "direccion": "Calle 73 #15-28, Bucaramanga",
-    "telefono": "3125556793",
-    "email": "jose.ramirez@email.com",
-    "cedula": "13456791",
-    "seguros_medicos": [
-      "Sura EPS"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1975-11-08T00:00:00.000Z"
-    },
-    "genero": "masculino",
-    "tipo_sangre": "B+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-03-20T00:00:00.000Z"
-    },
-    "hospital_principal": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "medico_tratante": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d006"
-    },
-    "ocupacion": "Comerciante",
-    "estado_civil": "casado",
-    "contacto_emergencia": {
-      "nombre": "Ana Díaz",
-      "telefono": "3125556794",
-      "parentesco": "esposa"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8e003"
-    },
-    "numero_historia_clinica": "FOS-004",
-    "nombre": "Carmen Lucía Morales Torres",
-    "direccion": "Calle 158 #30-12, Floridablanca",
-    "telefono": "3135556795",
-    "email": "carmen.morales@email.com",
-    "cedula": "37456792",
-    "seguros_medicos": [
-      "Colsanitas",
-      "Seguro Salud Total"
-    ],
-    "fecha_nacimiento": {
-      "$date": {
-        "$numberLong": "-50198400000"
-      }
-    },
-    "genero": "femenino",
-    "tipo_sangre": "AB+",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-04-10T00:00:00.000Z"
-    },
-    "hospital_principal": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "medico_tratante": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d008"
-    },
-    "ocupacion": "Administradora",
-    "estado_civil": "viuda",
-    "contacto_emergencia": {
-      "nombre": "Luis Morales",
-      "telefono": "3135556796",
-      "parentesco": "hijo"
-    }
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8e004"
-    },
-    "numero_historia_clinica": "ISA-005",
-    "nombre": "Pedro Antonio Vargas",
-    "direccion": "Calle 69 #8-15, Bucaramanga",
-    "telefono": "3145556797",
-    "email": "pedro.vargas@email.com",
-    "cedula": "13456793",
-    "seguros_medicos": [
-      "Salud Total"
-    ],
-    "fecha_nacimiento": {
-      "$date": "1995-12-18T00:00:00.000Z"
-    },
-    "genero": "masculino",
-    "tipo_sangre": "O-",
-    "estado": "activo",
-    "fecha_registro": {
-      "$date": "2023-05-25T00:00:00.000Z"
-    },
-    "hospital_principal": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-    },
-    "medico_tratante": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d010"
-    },
-    "ocupacion": "Estudiante",
-    "estado_civil": "soltero",
-    "contacto_emergencia": {
-      "nombre": "Rosa Vargas",
-      "telefono": "3145556798",
-      "parentesco": "madre"
-    }
-  },
+}
 
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060eba8"
-    },
-    "nombre": "Dr. Pedro Gómez",
-    "telefono": "3001234567",
-    "email": "pedro.gomez@hospital.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-87945",
-    "especialidad": "Cardiología",
-    "salario": 12000000,
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060eba9"
-    },
-    "area_id": {
-      "$oid": "6888c9f08ee52253e060ebaa"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2021-03-01T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "6888c9f08ee52253e060ebab"
-      },
-      {
-        "$oid": "6888c9f08ee52253e060ebac"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ebad"
-    },
-    "nombre": "Dra. Ana Lucía Torres",
-    "telefono": "3001234568",
-    "email": "ana.torres@hospital.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-87946",
-    "especialidad": "Neurología",
-    "salario": 11500000,
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060ebae"
-    },
-    "area_id": {
-      "$oid": "6888c9f08ee52253e060ebaf"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2020-08-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "6888c9f08ee52253e060ebb0"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f08ee52253e060ebb1"
-    },
-    "nombre": "Enf. Roberto Silva",
-    "telefono": "3001234569",
-    "email": "roberto.silva@hospital.com",
-    "tipo_personal": "003",
-    "numero_colegiatura": "ENF-15623",
-    "especialidad": "Enfermería General",
-    "salario": 3500000,
-    "hospital_id": {
-      "$oid": "6888c9f08ee52253e060ebb2"
-    },
-    "area_id": {
-      "$oid": "6888c9f08ee52253e060ebb3"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2019-11-20T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "6888c9f08ee52253e060ebb4"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d000"
-    },
-    "nombre": "Dr. Carlos Eduardo Pérez Mendoza",
-    "telefono": "3201234567",
-    "email": "carlos.perez@hic.fcv.org",
-    "tipo_personal": "001",
-    "numero_colegiatura": "MED-12345",
-    "especialidad": "Cardiología Intervencionista",
-    "salario": 25000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f0"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2015-01-10T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 18
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d001"
-    },
-    "nombre": "Dra. Patricia Elena Moreno García",
-    "telefono": "3201234568",
-    "email": "patricia.moreno@hic.fcv.org",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12346",
-    "especialidad": "Neurología",
-    "salario": 18000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f1"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2018-03-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-      }
-    ],
-    "turnos": [
-      "mañana"
-    ],
-    "experiencia_anos": 12
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d002"
-    },
-    "nombre": "Dr. Andrés Felipe Villamizar",
-    "telefono": "3201234569",
-    "email": "andres.villamizar@hic.fcv.org",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12347",
-    "especialidad": "Cirugía de Trasplantes",
-    "salario": 22000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f2"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2017-08-20T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde",
-      "noche"
-    ],
-    "experiencia_anos": 15
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d003"
-    },
-    "nombre": "Dr. Fernando Rueda Clausen",
-    "telefono": "3201234570",
-    "email": "fernando.rueda@hus.gov.co",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12348",
-    "especialidad": "Medicina Interna",
-    "salario": 15000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f3"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2010-02-01T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 20
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d004"
-    },
-    "nombre": "Dra. Sandra Patricia López",
-    "telefono": "3201234571",
-    "email": "sandra.lopez@hus.gov.co",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12349",
-    "especialidad": "Medicina de Urgencias",
-    "salario": 16000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f4"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2012-06-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-      }
-    ],
-    "turnos": [
-      "noche"
-    ],
-    "experiencia_anos": 13
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d005"
-    },
-    "nombre": "Dr. Miguel Ángel Ruiz Soto",
-    "telefono": "3201234572",
-    "email": "miguel.ruiz@hus.gov.co",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12350",
-    "especialidad": "Pediatría",
-    "salario": 14000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f5"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2015-09-10T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-      }
-    ],
-    "turnos": [
-      "mañana"
-    ],
-    "experiencia_anos": 10
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d006"
-    },
-    "nombre": "Dra. Carmen Elvira Sánchez",
-    "telefono": "3201234573",
-    "email": "carmen.sanchez@loscomuneros.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12351",
-    "especialidad": "Medicina Familiar",
-    "salario": 12000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f6"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2008-01-20T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 17
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d007"
-    },
-    "nombre": "Dra. Liliana Contreras Bayona",
-    "telefono": "3201234574",
-    "email": "liliana.contreras@loscomuneros.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12352",
-    "especialidad": "Ginecología y Obstetricia",
-    "salario": 13500000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f7"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2011-04-12T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 14
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d008"
-    },
-    "nombre": "Dr. Roberto Escobar Arenas",
-    "telefono": "3201234575",
-    "email": "roberto.escobar@clinicafoscal.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12353",
-    "especialidad": "Oncología Clínica",
-    "salario": 20000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f8"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2013-07-08T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 16
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d009"
-    },
-    "nombre": "Dr. José Luis Accini Mendoza",
-    "telefono": "3201234576",
-    "email": "jose.accini@clinicafoscal.com",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12354",
-    "especialidad": "Cirugía Cardiovascular",
-    "salario": 24000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f9"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2010-11-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 22
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d010"
-    },
-    "nombre": "Dr. Carlos Mantilla Serrano",
-    "telefono": "3201234577",
-    "email": "carlos.mantilla@isabu.gov.co",
-    "tipo_personal": "002",
-    "numero_colegiatura": "MED-12355",
-    "especialidad": "Medicina General",
-    "salario": 8000000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9fa"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2018-03-01T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-      }
-    ],
-    "turnos": [
-      "mañana"
-    ],
-    "experiencia_anos": 7
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d011"
-    },
-    "nombre": "Dra. María Fernanda Gómez",
-    "telefono": "3201234578",
-    "email": "fernanda.gomez@isabu.gov.co",
-    "tipo_personal": "004",
-    "numero_colegiatura": "ODO-5678",
-    "especialidad": "Odontología General",
-    "salario": 6500000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9fb"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2019-08-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e4"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde"
-    ],
-    "experiencia_anos": 6
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d012"
-    },
-    "nombre": "Enf. Ana María Rodríguez",
-    "telefono": "3201234579",
-    "email": "ana.rodriguez@hic.fcv.org",
-    "tipo_personal": "003",
-    "numero_colegiatura": "ENF-3456",
-    "especialidad": "Enfermería Cardiovascular",
-    "salario": 4500000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f0"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2020-01-15T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-      }
-    ],
-    "turnos": [
-      "mañana",
-      "tarde",
-      "noche"
-    ],
-    "experiencia_anos": 5
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8d013"
-    },
-    "nombre": "Enf. Roberto Silva Martínez",
-    "telefono": "3201234580",
-    "email": "roberto.silva@hus.gov.co",
-    "tipo_personal": "003",
-    "numero_colegiatura": "ENF-3457",
-    "especialidad": "Enfermería de Urgencias",
-    "salario": 3800000,
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "area_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f4"
-    },
-    "estado": "activo",
-    "fecha_ingreso": {
-      "$date": "2017-05-20T00:00:00.000Z"
-    },
-    "hospitales_asignados": [
-      {
-        "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-      }
-    ],
-    "turnos": [
-      "noche"
-    ],
-    "experiencia_anos": 8
-  },
 
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebba"
-    },
-    "nombre": "Terapia Intensiva Cardiovascular",
-    "descripcion": "Tratamiento para pacientes con infarto agudo de miocardio",
-    "area_medica_id": {
-      "$oid": "6888c9f18ee52253e060ebbb"
-    },
-    "area": "Cardiología",
-    "costo": 500000,
-    "duracion_estimada": 7,
-    "tipo_tratamiento": "terapia",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:37.186Z"
-    },
-    "medicamentos_asociados": [
-      {
-        "$oid": "6888c9f18ee52253e060ebbc"
-      },
-      {
-        "$oid": "6888c9f18ee52253e060ebbd"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebbe"
-    },
-    "nombre": "Rehabilitación Neurológica",
-    "descripcion": "Programa de rehabilitación para pacientes con accidente cerebrovascular",
-    "area_medica_id": {
-      "$oid": "6888c9f18ee52253e060ebbf"
-    },
-    "area": "Neurología",
-    "costo": 350000,
-    "duracion_estimada": 30,
-    "tipo_tratamiento": "rehabilitacion",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:37.186Z"
-    },
-    "medicamentos_asociados": []
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebc0"
-    },
-    "nombre": "Control Hipertensión",
-    "descripcion": "Tratamiento ambulatorio para control de presión arterial",
-    "area_medica_id": {
-      "$oid": "6888c9f18ee52253e060ebc1"
-    },
-    "area": "Cardiología",
-    "costo": 80000,
-    "duracion_estimada": 90,
-    "tipo_tratamiento": "ambulatorio",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2025-07-29T13:17:37.186Z"
-    },
-    "medicamentos_asociados": [
-      {
-        "$oid": "6888c9f18ee52253e060ebc2"
-      }
-    ]
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f000"
-    },
-    "nombre": "Angioplastia Coronaria Primaria",
-    "descripcion": "Procedimiento de urgencia para abrir arterias coronarias obstruidas",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f0"
-    },
-    "area": "Cardiología Intervencionista",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "costo": 12000000,
-    "duracion_estimada": 2,
-    "tipo_tratamiento": "procedimiento_urgencia",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2020-01-15T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": true,
-    "nivel_complejidad": "alta"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f001"
-    },
-    "nombre": "Craniectomía Descompresiva",
-    "descripcion": "Cirugía neurológica para reducir presión intracraneal",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f1"
-    },
-    "area": "Neurología y Neurocirugía",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "costo": 15000000,
-    "duracion_estimada": 4,
-    "tipo_tratamiento": "cirugia_mayor",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2019-06-20T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": true,
-    "nivel_complejidad": "muy_alta"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f002"
-    },
-    "nombre": "Trasplante Renal",
-    "descripcion": "Trasplante de riñón para pacientes con insuficiencia renal terminal",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f2"
-    },
-    "area": "Unidad de Trasplantes",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "costo": 80000000,
-    "duracion_estimada": 6,
-    "tipo_tratamiento": "trasplante",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2018-03-10T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": true,
-    "nivel_complejidad": "muy_alta"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f003"
-    },
-    "nombre": "Quimioterapia Adyuvante",
-    "descripcion": "Tratamiento oncológico complementario post-cirugía",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f8"
-    },
-    "area": "Oncología Clínica",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "costo": 5000000,
-    "duracion_estimada": 90,
-    "tipo_tratamiento": "quimioterapia",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2020-08-12T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": false,
-    "nivel_complejidad": "alta"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f004"
-    },
-    "nombre": "Control Prenatal Integral",
-    "descripcion": "Seguimiento médico completo durante el embarazo",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f7"
-    },
-    "area": "Ginecología y Obstetricia",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "costo": 800000,
-    "duracion_estimada": 270,
-    "tipo_tratamiento": "seguimiento",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2020-05-20T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": false,
-    "nivel_complejidad": "media"
-  },
-  {
-    "_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8f005"
-    },
-    "nombre": "Rehabilitación Post-COVID",
-    "descripcion": "Programa de rehabilitación pulmonar y física post COVID-19",
-    "area_medica_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9f3"
-    },
-    "area": "Medicina Interna",
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "costo": 1200000,
-    "duracion_estimada": 60,
-    "tipo_tratamiento": "rehabilitacion",
-    "estado": "disponible",
-    "fecha_creacion": {
-      "$date": "2021-03-15T00:00:00.000Z"
-    },
-    "requiere_hospitalizacion": false,
-    "nivel_complejidad": "media"
-  },
-
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebc6"
-    },
-    "fecha": {
-      "$date": "2025-07-20T00:00:00.000Z"
-    },
-    "hora": "10:30",
-    "medico_id": {
-      "$oid": "6888c9f18ee52253e060ebc7"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f18ee52253e060ebc8"
-    },
-    "diagnostico": "Arritmia cardíaca",
-    "observaciones": "Paciente presenta palpitaciones frecuentes. Se indica electrocardiograma de control.",
-    "tratamiento_id": {
-      "$oid": "6888c9f18ee52253e060ebc9"
-    },
-    "medicamentos_recetados": [
-      {
-        "medicamento_id": {
-          "$oid": "6888c9f18ee52253e060ebca"
-        },
-        "cantidad": 30,
-        "dosificacion": "1 tableta cada 8 horas",
-        "duracion": "30 días",
-        "indicaciones_especiales": "Tomar con alimentos"
-      }
-    ],
-    "estado_visita": "completada",
-    "costo_consulta": 150000,
-    "tipo_consulta": "control",
-    "proxima_cita": {
-      "$date": "2025-08-20T00:00:00.000Z"
+    {
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "nombre"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "fabricante": {
+                "bsonType": "string"
+            },
+            "tipo": {
+                "bsonType": "string"
+            },
+            "cantidad_inventario": {
+                "bsonType": "double"
+            },
+            "precio_unitario": {
+                "bsonType": "double"
+            },
+            "fecha_vencimiento": {
+                "bsonType": "date"
+            },
+            "codigo_vencimiento": {
+                "bsonType": "string"
+            },
+            "estado": {
+                "bsonType": "string"
+            }
+        }
     }
-  },
-  {
-    "_id": {
-      "$oid": "6888c9f18ee52253e060ebcb"
-    },
-    "fecha": {
-      "$date": "2025-07-18T00:00:00.000Z"
-    },
-    "hora": "14:00",
-    "medico_id": {
-      "$oid": "6888c9f18ee52253e060ebcc"
-    },
-    "paciente_id": {
-      "$oid": "6888c9f18ee52253e060ebcd"
-    },
-    "diagnostico": "Cefalea tensional",
-    "observaciones": "Dolor de cabeza recurrente, posible origen tensional por estrés laboral.",
-    "tratamiento_id": null,
-    "medicamentos_recetados": [
-      {
-        "medicamento_id": {
-          "$oid": "6888c9f18ee52253e060ebce"
-        },
-        "cantidad": 20,
-        "dosificacion": "1 tableta cada 6 horas si hay dolor",
-        "duracion": "10 días",
-        "indicaciones_especiales": "No exceder 4 tabletas por día"
-      }
-    ],
-    "estado_visita": "completada",
-    "costo_consulta": 120000,
-    "tipo_consulta": "primera_vez",
-    "proxima_cita": null
-  },
-  {
-    "_id": {
-      "$oid": "65f1b5c2d4e5f6a7b8c9d001"
-    },
-    "paciente_id": {
-      "$oid": "65f1a3d4e5f6a7b8c9d0e001"
-    },
-    "personal_id": {
-      "$oid": "65f1a4e5f6a7b8c9d0e1f001"
-    },
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e0"
-    },
-    "fecha_visita": {
-      "$date": "2025-07-15T14:30:00.000Z"
-    },
-    "motivo": "Control de presión arterial",
-    "diagnostico_preliminar": "Hipertensión arterial",
-    "tratamiento_indicado": "Ajuste de dosis de Losartán",
-    "observaciones": "Paciente con cifras tensionales estables. Se recomienda continuar tratamiento actual.",
-    "estado": "finalizada"
-  },
-  {
-    "_id": {
-      "$oid": "65f1b5c2d4e5f6a7b8c9d002"
-    },
-    "paciente_id": {
-      "$oid": "65f1a3d4e5f6a7b8c9d0e002"
-    },
-    "personal_id": {
-      "$oid": "65f1a4e5f6a7b8c9d0e1f002"
-    },
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e1"
-    },
-    "fecha_visita": {
-      "$date": "2025-07-20T19:00:00.000Z"
-    },
-    "motivo": "Dolor abdominal agudo",
-    "diagnostico_preliminar": "Gastritis aguda",
-    "tratamiento_indicado": "Omeprazol 20mg cada 12 horas por 14 días",
-    "observaciones": "Se recomienda evitar comidas picantes y grasas. Revisión en 10 días.",
-    "estado": "finalizada"
-  },
-  {
-    "_id": {
-      "$oid": "65f1b5c2d4e5f6a7b8c9d003"
-    },
-    "paciente_id": {
-      "$oid": "65f1a3d4e5f6a7b8c9d0e003"
-    },
-    "personal_id": {
-      "$oid": "65f1a4e5f6a7b8c9d0e1f003"
-    },
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e2"
-    },
-    "fecha_visita": {
-      "$date": "2025-07-25T15:15:00.000Z"
-    },
-    "motivo": "Tos persistente y fiebre",
-    "diagnostico_preliminar": "Infección respiratoria alta",
-    "tratamiento_indicado": "Amoxicilina 500mg cada 8 horas por 7 días",
-    "observaciones": "Paciente con buena saturación de oxígeno. Indicar uso de tapabocas.",
-    "estado": "finalizada"
-  },
-  {
-    "_id": {
-      "$oid": "65f1b5c2d4e5f6a7b8c9d004"
-    },
-    "paciente_id": {
-      "$oid": "65f1a3d4e5f6a7b8c9d0e004"
-    },
-    "personal_id": {
-      "$oid": "65f1a4e5f6a7b8c9d0e1f004"
-    },
-    "hospital_id": {
-      "$oid": "65f1a1b2c3d4e5f6a7b8c9e3"
-    },
-    "fecha_visita": {
-      "$date": "2025-07-28T13:45:00.000Z"
-    },
-    "motivo": "Chequeo postoperatorio",
-    "diagnostico_preliminar": "Recuperación sin complicaciones",
-    "tratamiento_indicado": "Continuar con analgésicos y control en 1 semana",
-    "observaciones": "La herida quirúrgica presenta buena cicatrización.",
-    "estado": "finalizada"
-  }]
+}
+
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "nombre"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "description": {
+                "bsonType": "string"
+            },
+            "hospital_id": {
+                "bsonType": "objectId"
+            },
+            "estado": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
+
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "nombre",
+            "area_medica_id"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "descripcion": {
+                "bsonType": "string"
+            },
+            "area_medica_id": {
+                "bsonType": "objectId"
+            },
+            "costo": {
+                "bsonType": "double"
+            },
+            "duracion_estimada": {
+                "bsonType": "double"
+            },
+            "tipo_tratamiento": {
+                "bsonType": "string"
+            },
+            "estado": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
+
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "nombre",
+            "hospital_id",
+            "area_id"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "telefono": {
+                "bsonType": "string"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "tipo_personal": {
+                "bsonType": "string"
+            },
+            "hospital_id": {
+                "bsonType": "objectId"
+            },
+            "area_id": {
+                "bsonType": "objectId"
+            },
+            "salario": {
+                "bsonType": "double"
+            },
+            "especialidad": {
+                "bsonType": "string"
+            },
+            "estado": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
+
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "medico_id",
+            "paciente_id",
+            "tratamiento_id"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "fecha": {
+                "bsonType": "date"
+            },
+            "hora": {
+                "bsonType": "string"
+            },
+            "medico_id": {
+                "bsonType": "objectId"
+            },
+            "paciente_id": {
+                "bsonType": "objectId"
+            },
+            "diagnostico": {
+                "bsonType": "string"
+            },
+            "observaciones": {
+                "bsonType": "string"
+            },
+            "tratamiento_id": {
+                "bsonType": "objectId"
+            },
+            "medicamentos_recetados": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "objectId"
+                }
+            },
+            "estado_visita": {
+                "bsonType": "string"
+            },
+            "costo_consulta": {
+                "bsonType": "double"
+            }
+        }
+    }
+}
+
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        "required": [
+            "_id",
+            "nombre_historia_clinica"
+        ],
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "nombre_historia_clinica": {
+                "bsonType": "string"
+            },
+            "nombre": {
+                "bsonType": "string"
+            },
+            "direccion": {
+                "bsonType": "string"
+            },
+            "telefono": {
+                "bsonType": "string"
+            },
+            "email": {
+                "bsonType": "string"
+            },
+            "seguros_medicos": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            },
+            "fecha_nacimiento": {
+                "bsonType": "date"
+            },
+            "genero": {
+                "bsonType": "string"
+            },
+            "tipo_sangre": {
+                "bsonType": "string"
+            },
+            "estado": {
+                "bsonType": "string"
+            }
+        }
+    }
+}
+
+{
+    "$jsonSchema": {
+        "bsonType": "object",
+        // Campos requeridos
+        "required": [
+            "_id",
+            "paciente_id",
+            "medico_responsable"
+        ],
+        // Definición de propiedades
+        "properties": {
+            "_id": {
+                "bsonType": "objectId"
+            },
+            "paciente_id": {
+                "bsonType": "objectId"
+            },
+            "diagnosticos": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            },
+            "tratamientos_realizados": {
+                "bsonType": "array",
+                "items": {
+                    "bsonType": "string"
+                }
+            },
+            "resultados": {
+                "bsonType": "string"
+            },
+            "fecha_creacion": {
+                "bsonType": "date"
+            },
+            "fecha_actualizacion": {
+                "bsonType": "date"
+            },
+            "medico_responsable": {
+                "bsonType": "objectId"
+            }
+        }
+    }
+}
